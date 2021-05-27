@@ -2,7 +2,7 @@
 verificar si es para o impar*/
 #include <stdio.h>
 
-int main ()
+int main () //revisa
 {
 
     int numero;
