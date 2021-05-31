@@ -1,0 +1,28 @@
+/*Dep3_Progr6: que cuente el número de veces que ahorras y nos diga el acumulado de ahorro*/
+#include <stdio.h>
+int main()
+{
+    int banco; //Acumulador
+    int monto; //monto o cantidad a ahorrar por evento
+    int numdepositos; //cantidad de veces que fui al banco
+    char respuesta; //
+    numdepositos = 0;
+    banco = 0;
+    monto = 0;
+    respuesta = 'n';
+    do
+    {
+        //voy al banco
+        printf("\n\n Monto a depositar:");
+        scanf("%d", &monto);
+        banco = banco + monto; //Acumulador
+        numdepositos = numdepositos + 1; //Contador
+        printf("\n\n¿Quieres realizar otro depósito? (s/n)");
+        scanf("%c", &respuesta);
+    } while(respuesta != 'n');
+    printf("\n Dinero que tienes en el banco %d", banco);
+    printf("\n Número de depósitos %d", numdepositos); 
+    /*No encontré el error ni solucion del programa*/
+    return 0;
+    
+}
